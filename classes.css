@@ -19,3 +19,7 @@
 .section {
     min-height: 100vh;/*altura minima de cada pagina*/
 }
+
+.menu-spacing {
+    height: 65px;/*altura para o menu nao sobrepor o conteudo*/
+}
