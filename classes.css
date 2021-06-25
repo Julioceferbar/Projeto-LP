@@ -1,0 +1,21 @@
+
+.main-bg {
+    background-image: url(../main-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);/*variavel de cor branca*/
+}
+
+.white-bg {
+    background: var(--white-color);
+}
+
+.main-content {/*centraliza conteudo*/
+    max-width: 120rem;
+    margin:0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;/*altura minima de cada pagina*/
+}
