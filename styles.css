@@ -3,8 +3,8 @@
     top: 8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap:var(--gap); 
-    height: 100vh;
+    gap: var(--gap); 
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -16,15 +16,16 @@
 .intro-img img,
 .intro-img svg{
     max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .top3-content {
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -32,7 +33,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading {
@@ -67,5 +68,20 @@
     top: -4rem;
     left: -2rem;
     transform: rotate(5deg);
-     
 }
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-width: 36rem;
+    overflow-x: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate( -3%, 3%) scale(1.2) rotate(5deg);
+}
+
