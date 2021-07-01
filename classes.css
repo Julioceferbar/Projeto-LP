@@ -24,3 +24,8 @@
 .menu-spacing {
     height: 65px;/*altura para o menu nao sobrepor o conteudo*/
 }
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
