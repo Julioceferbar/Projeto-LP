@@ -1,31 +1,31 @@
-
 .main-bg {
-    background-image: url(../main-bg.svg);
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-color);/*variavel de cor branca*/
+  background-image: url(../main-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color); /*variavel de cor branca*/
 }
 
 .white-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
+  background: var(--white-color);
+  color: var(--primary-color);
 }
 
-.main-content {/*centraliza conteudo*/
-    max-width: 120rem;
-    margin:0 auto;
-    padding: 8rem var(--gap);
+.main-content {
+  /*centraliza conteudo*/
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem var(--gap);
 }
 
 .section {
-    min-height: 100vh;/*altura minima de cada pagina*/
+  min-height: 100vh; /*altura minima de cada pagina*/
 }
 
 .menu-spacing {
-    height: 65px;/*altura para o menu nao sobrepor o conteudo*/
+  height: 65px; /*altura para o menu nao sobrepor o conteudo*/
 }
 
 body .full-width {
-    width: 100%;
-    flex: 1 1 100%;
+  width: 100%;
+  flex: 1 1 100%;
 }

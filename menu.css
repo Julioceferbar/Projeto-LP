@@ -1,5 +1,6 @@
 .menu {
-  position: fixed; /*fixando a barra do logo*/
+  position: fixed;
+  /*fixando a barra do logo*/
   top: 0;
   left: 0;
   right: 0;
@@ -9,8 +10,10 @@
 }
 
 .menu-content {
-  display: flex; /*deixar um ao lado do outro*/
-  justify-content: space-between; /*separa llogo da intro*/
+  display: flex;
+  /*deixar um ao lado do outro*/
+  justify-content: space-between;
+  /*separa llogo da intro*/
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
@@ -30,7 +33,8 @@
 
 .menu ul {
   /*intro*/
-  list-style: none; /*tirando as bolinhas da lista*/
+  list-style: none;
+  /*tirando as bolinhas da lista*/
   display: flex;
 }
 
@@ -43,6 +47,7 @@
   color: var(--primary-color);
   position: relative;
 }
+
 .menu ul li a::after {
   content: "";
   position: absolute;

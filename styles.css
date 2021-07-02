@@ -56,7 +56,7 @@
   font-size: 3rem;
   position: relative;
   padding-left: 5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .grid h3::before {
@@ -73,8 +73,8 @@
 .gallery-img {
   width: 100%;
   max-width: 36rem;
-  max-width: 36rem;
-  overflow-x: hidden;
+  max-height: 36rem;
+  overflow: hidden;
 }
 
 .gallery-img img {
@@ -98,68 +98,89 @@
 }
 
 .form-grid legend {
-    font-style: italic;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
 }
 
 .form-group {
-    flex: 1 1 320px;
+  flex: 1 1 320px;
 }
 .form-group label {
-    display: block;
-    margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .form-group input,
 .form-group textarea {
-    border: none;
-    background: var(--white-color);
-    padding: 1.5rem 2rem;
-    width: 100%;
-    font-size: 3rem;
-    outline: none;
-}    
+  border: none;
+  background: var(--white-color);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  font-size: 3rem;
+  outline: none;
+}
 
 .form-group input:focus,
 .form-group textarea:focus {
-    box-shadow: 0 0 10px 2px var(--secondary-color);
+  box-shadow: 0 0 10px 2px var(--secondary-color);
 }
 
 .form-group button {
-    border: 0.5rem solid var(--white-color);
-    background: none;
-    color: var(--white-color);
-    padding: 1.5rem 2rem;
-    font-size: 3rem;
-    cursor: pointer;/*cursor quando passa o mouse*/
-    transition: all 300ms ease-in-out;/*efeito ao passar o mouse*/
+  border: 0.5rem solid var(--white-color);
+  background: none;
+  color: var(--white-color);
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  cursor: pointer; /*cursor quando passa o mouse*/
+  transition: all 300ms ease-in-out; /*efeito ao passar o mouse*/
 }
 
-.form-group button:hover {/*efeito inverter cores*/
-    background: var(--white-color);
-    color: var(--primary-color);
+.form-group button:hover {
+  /*efeito inverter cores*/
+  background: var(--white-color);
+  color: var(--primary-color);
 }
 
 .form-group ::placeholder {
-    color: var(--light-gray-color);
+  color: var(--light-gray-color);
 }
 
 .footer {
-    text-align: center;/*alinhar o texto no centro*/
-    font-size: 1.6rem;
+  text-align: center; /*alinhar o texto no centro*/
+  font-size: 1.6rem;
 }
 
 .footer a {
-    color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .heart {
-    color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 
 .footer p {
-    margin: 0;
-    padding: 3rem;
+  margin: 0;
+  padding: 3rem;
 }
 
+@media (max-width: 800px) {
+  .intro-content,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-img img {
+    width: 100%;
+  }
+
+  .grid-one-content {
+    display: block;
+  }
+}
