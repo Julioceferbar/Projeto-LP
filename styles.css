@@ -171,7 +171,7 @@
   display: none;
 }
 
-.back-to-top {
+.back-to-top { /*botao voltar para o topo*/
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -183,6 +183,9 @@
   align-items: center;
   border-radius: 50%;
   color: var(--primary-color);
+  transform: rotate(-90deg);
+  border: 0.1rem solid var(--primary-color);
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -253,8 +256,4 @@
   .menu-spacing {
     display: none;
   }
-
-
-
-
 }
